@@ -14,6 +14,7 @@ func Serve() {
 	r.DELETE("/api/dir/*path", deleteHandler)
 	r.PATCH("/api/dir/*path", magicHandler)
 
+	r.PATCH("/api/rename", renameHandler)
 	r.GET("/api/freespace", freeSpaceHandler)
 	r.POST("/upload", uploadHandler)
 	r.Run(":8070")

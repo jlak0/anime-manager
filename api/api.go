@@ -16,6 +16,6 @@ func Serve() {
 
 	r.PATCH("/api/rename", renameHandler)
 	r.GET("/api/freespace", freeSpaceHandler)
-	r.POST("/upload", uploadHandler)
+	r.POST("/api/upload", uploadHandler)
 	r.Run(":8070")
 }
